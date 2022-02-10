@@ -1,2 +1,2 @@
 # exploring-languages
-On a journey to try a handful of programming languages and explore the differences between them.
+Trying a handful of programming languages and exploring the differences between them.
