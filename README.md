@@ -12,7 +12,7 @@ Here I'm trying a handful of programming languages with the focus of exploring t
 - Dart ✅
 - C ✅
 - Python ✅
-- Java
+- Ruby ✅
 - JavaScript
 - Emojicode
 
@@ -28,10 +28,16 @@ Here I'm trying a handful of programming languages with the focus of exploring t
 ├── go
 │   ├── README.md
 │   └── text_adventure.go
+├── javascript
+│   ├── README.md
+│   └── text_adventure.js
 ├── LICENSE
 ├── python
 │   ├── README.md
 │   └── text_adventure.py
-└── README.md
+├── README.md
+└── ruby
+    ├── README.md
+    └── text_adventure.rb
 
 ```
