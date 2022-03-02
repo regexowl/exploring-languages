@@ -13,7 +13,7 @@ Here I'm trying a handful of programming languages with the focus of exploring t
 - C ✅
 - Python ✅
 - Ruby ✅
-- JavaScript
+- ![JavaScript](https://github.com/regexowl/exploring-languages/blob/main/javascript/index.html)
 - Emojicode
 
 ## A little map of the library
