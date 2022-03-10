@@ -222,7 +222,7 @@ function madeChoice() {
 function endTheGame() {
 	thankYou = `
 Thank you for playing this super simple text adventure!
-Would you like to see it implemented in multiple other languages?
+Would you like to see it implemented in multiple other languages like Go, Python, C and more?
 Check out <a href="https://github.com/regexowl/exploring-languages" id="myLink">my Language Library repository on GitHub.</a>`;
 
 	jsToHTML(thankYou);
