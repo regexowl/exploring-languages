@@ -4,7 +4,7 @@ body {
     font-family: monospace;
 }
 
-div {
+#theStory {
     white-space: pre-wrap;
 }
 
