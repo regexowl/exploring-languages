@@ -7,7 +7,7 @@ Here I'm trying a handful of programming languages with the focus of exploring t
 ### Text Adventure
 - a simple text based adventure written in Go and converted to other language for the purpose of seeing the limitations and observing the differences between the language under the constrains of the program
 
-Wanna play the text adventure in your browser? ![Click here](https://regexowl.github.io/exploring-languages/)
+Wanna play the text adventure in your browser? [Click here](https://regexowl.github.io/exploring-languages/)
 
 ## In our collection
 - Go ✅
@@ -15,7 +15,7 @@ Wanna play the text adventure in your browser? ![Click here](https://regexowl.gi
 - C ✅
 - Python ✅
 - Ruby ✅
-- ![JavaScript](https://regexowl.github.io/exploring-languages/) ✅
+- [JavaScript](https://regexowl.github.io/exploring-languages/) ✅
 - Emojicode
 
 ## A little map of the library
