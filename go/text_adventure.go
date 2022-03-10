@@ -7,7 +7,8 @@
 
    -------------------------------------------------
 
-   My first project written in Go
+   A simple text adventure written in Go
+   Check https://github.com/regexowl/exploring-languages to see the same adventure in multiple other languages
 
 */
 

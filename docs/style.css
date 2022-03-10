@@ -1,0 +1,35 @@
+body {
+    background-color: #2A2A2A;
+    color: #6BED8D;
+    font-family: monospace;
+}
+
+div {
+    white-space: pre-wrap;
+}
+
+form {
+    display: flex;
+}
+
+input[type=text] {
+    flex-grow: 1;
+}
+
+#userAction {
+    font-family: monospace;
+    background-color: #555555;
+    color: #6BED8D;
+    border: 1px solid #6BED8D;
+}
+
+#userButton {
+    font-family: monospace;
+    background-color: #2A2A2A;
+    color: #6BED8D;
+    border: none;
+}
+
+#userButton:hover {
+    color: orange;
+}

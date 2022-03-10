@@ -7,7 +7,8 @@
 
    -------------------------------------------------
 
-   A simple text adventure converted from Go source code to Dart
+   A simple text adventure written in Dart
+   Check https://github.com/regexowl/exploring-languages to see the same adventure in multiple other languages
 
 */
 
