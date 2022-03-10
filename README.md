@@ -7,13 +7,15 @@ Here I'm trying a handful of programming languages with the focus of exploring t
 ### Text Adventure
 - a simple text based adventure written in Go and converted to other language for the purpose of seeing the limitations and observing the differences between the language under the constrains of the program
 
+Wanna play the text adventure in your browser? ![Click here](https://regexowl.github.io/exploring-languages/)
+
 ## In our collection
 - Go ✅
 - Dart ✅
 - C ✅
 - Python ✅
 - Ruby ✅
-- ![JavaScript](https://github.com/regexowl/exploring-languages/blob/main/javascript/index.html)
+- ![JavaScript](https://regexowl.github.io/exploring-languages/) ✅
 - Emojicode
 
 ## A little map of the library
@@ -25,12 +27,17 @@ Here I'm trying a handful of programming languages with the focus of exploring t
 ├── dart
 │   ├── README.md
 │   └── text_adventure.dart
+├── docs
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── README.md
+│   ├── style.css
+│   └── text_adventure.js
 ├── go
 │   ├── README.md
 │   └── text_adventure.go
 ├── javascript
-│   ├── README.md
-│   └── text_adventure.js
+│   └── README.md
 ├── LICENSE
 ├── python
 │   ├── README.md
