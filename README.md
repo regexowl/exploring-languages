@@ -7,7 +7,7 @@ Here I'm trying a handful of programming languages with the focus of exploring t
 ### Text Adventure
 - a simple text based adventure written in Go and converted to other language for the purpose of seeing the limitations and observing the differences between the language under the constrains of the program
 
-Checkout the browser version of the game -> [PLAY](https://regexowl.github.io/exploring-languages/)
+Check out the browser version of the game -> [PLAY](https://regexowl.github.io/exploring-languages/)
 
 ## In our collection
 - Go ✅
