@@ -63,8 +63,7 @@ function wakeUp() {
 You wake up with a headache. Sun is pouring through a dirty window.
 You look around the room and see your laptop, an alarm clock and a door to the kitchen.
 		
-What would you like to do?
-	`;
+What would you like to do?`;
 
 	jsToHTML(prologue);
 }
@@ -181,14 +180,14 @@ function changeState(command) {
 // Prints epilogue and hides the form after leaving the house
 function goOutside() {
 	const goingForAWAlk = `
-	What a beautiful day.
-	Enjoy!
-	`;
+What a beautiful day.
+Enjoy!`;
 
 	jsToHTML(goingForAWAlk);
 
 	var form = document.getElementById("userForm");
 	form.style.display = "none";
+	endTheGame();
 }
 
 /* 
@@ -218,4 +217,13 @@ function madeChoice() {
 	// Print's an output based on player's action and presents options based on location
 	changeState(command);
 	presentOptions();
+}
+
+function endTheGame() {
+	thankYou = `
+Thank you for playing this super simple text adventure!
+Would you like to see it implemented in multiple other languages?
+Check out <a href="https://github.com/regexowl/exploring-languages" id="myLink">my Language Library repository on GitHub.</a>`;
+
+	jsToHTML(thankYou);
 }

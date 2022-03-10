@@ -16,6 +16,14 @@ input[type=text] {
     flex-grow: 1;
 }
 
+#myLink {
+    color: orange;
+}
+
+#myLink:hover {
+    color: orangered;
+}
+
 #userAction {
     font-family: monospace;
     background-color: #555555;
