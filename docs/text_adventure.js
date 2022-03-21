@@ -161,7 +161,7 @@ function changeState(command) {
 					break;
 				case 2:
 					howMuch = "very";
-					document.getElementById("theStory").className = "caffeinated";
+					document.getElementById("theStory").classList.add("caffeinated");
 					break;
 				}
 				jsToHTML("You feel " + howMuch + " awake.");
@@ -169,7 +169,7 @@ function changeState(command) {
 				jsToHTML("You should slow down with the coffee.");
 			} else if (state.cupsOfCoffee == 4) {
 				jsToHTML("That's it, no more coffee for you!");
-				document.getElementById("theStory").className = "supercaffeinated";
+				document.getElementById("theStory").classList.add("supercaffeinated");
 			} else {
 				jsToHTML("Nope.");
 			}
