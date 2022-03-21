@@ -1,19 +1,17 @@
 body {
-    background-color: #2A2A2A;
+    padding-top: 70px;
+    background: #2A2A2A;
+    background-image: url("img/bedroom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
     color: #6BED8D;
     font-family: monospace;
 }
 
 #theStory {
+    height: 70vh;
     white-space: pre-wrap;
-}
-
-form {
-    display: flex;
-}
-
-input[type=text] {
-    flex-grow: 1;
 }
 
 #myLink {
@@ -40,4 +38,14 @@ input[type=text] {
 
 #userButton:hover {
     color: orange;
+}
+
+.caffeinated {
+    color: yellow;
+    font-size: 110%;
+}
+
+.supercaffeinated {
+    color: red;
+    font-size: 120%;
 }

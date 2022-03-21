@@ -71,10 +71,10 @@ What would you like to do?`;
 // Player's options while in the bedroom
 function inTheBedroom() {
 	const bedroomChoices = `
-	Type TIME to check time
-	Type LAPTOP to check your e-mails
-	Type KITCHEN to go to the kitchen
-	Type LEAVE to go outside
+  Type TIME to check time
+  Type LAPTOP to check your e-mails
+  Type KITCHEN to go to the kitchen
+  Type LEAVE to go outside
 	`;
 
 	jsToHTML(bedroomChoices);
@@ -85,14 +85,14 @@ function inTheKitchen() {
 	var kitchenChoices;
 	if (state.cupsOfCoffee <= 4) {
 		kitchenChoices = `
-	Type COFFEE to boost your energy
-	Type BACK to go to the living room
+  Type COFFEE to boost your energy
+  Type BACK to go to the living room
 		`;
 	}
 	// When player drinks more than four cups of coffee the option for another coffee doesn't print
 	else {
 		kitchenChoices = `
-	Type BACK to go to the living room
+  Type BACK to go to the living room
 		`;
 	}
 
@@ -116,6 +116,7 @@ function changeState(command) {
 		case "kitchen":
 			jsToHTML("You are now standing next to your beloved coffee machine.");
 			state.location = "Kitchen";
+			document.body.style.backgroundImage = "url('img/kitchen.jpg')";
 			break;
 		case "laptop":
 			if (state.cupsOfCoffee > 0) {
@@ -129,6 +130,7 @@ function changeState(command) {
 			if (state.checkedLaptop == true) {
 				jsToHTML("You feel sudden urge to go for a walk.");
 				state.location = "Outside";
+				document.body.style.backgroundImage = "url('img/outside.jpg')";
 			} else {
 				jsToHTML("You should check your e-mails first. Just to be sure.");
 			}
@@ -144,6 +146,7 @@ function changeState(command) {
 		case "back":
 			jsToHTML("You are back in the living room.");
 			state.location = "Bedroom";
+			document.body.style.backgroundImage = "url('img/bedroom.jpg')";
 			break;
 		case "coffee":
 			// How much coffee can you possibly drink?
@@ -158,6 +161,7 @@ function changeState(command) {
 					break;
 				case 2:
 					howMuch = "very";
+					document.getElementById("theStory").className = "caffeinated";
 					break;
 				}
 				jsToHTML("You feel " + howMuch + " awake.");
@@ -165,6 +169,7 @@ function changeState(command) {
 				jsToHTML("You should slow down with the coffee.");
 			} else if (state.cupsOfCoffee == 4) {
 				jsToHTML("That's it, no more coffee for you!");
+				document.getElementById("theStory").className = "supercaffeinated";
 			} else {
 				jsToHTML("Nope.");
 			}
@@ -217,6 +222,8 @@ function madeChoice() {
 	// Print's an output based on player's action and presents options based on location
 	changeState(command);
 	presentOptions();
+	var story = document.getElementById("theStory");
+	story.scrollTop = story.scrollHeight;
 }
 
 function endTheGame() {
