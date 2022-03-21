@@ -30,6 +30,11 @@ function jsToHTML(whatNeedsToBeSeen) {
 	story.innerHTML += whatNeedsToBeSeen + "<br>";
 }
 
+function addCoffee() {
+	var coffeCounter = document.getElementById("coffeeCounter");
+	coffeCounter.innerHTML += "☕";
+}
+
 // Scans keyboard input to the 'action' variable and converts it to lowercase to eliminiate case sensitivity
 function getCommand() {
 	var action = document.getElementById("userAction").value;
@@ -155,21 +160,27 @@ function changeState(command) {
 				switch (state.cupsOfCoffee) {
 				case 0:
 					howMuch = "slightly";
+					addCoffee();
 					break;
 				case 1:
 					howMuch = "even more";
+					addCoffee();
 					break;
 				case 2:
 					howMuch = "very";
-					document.getElementById("theStory").className = "caffeinated";
+					addCoffee();
+					document.getElementById("theStory").classList.add("caffeinated");
+					document.getElementById("userForm").classList.add("caffeinated");
 					break;
 				}
 				jsToHTML("You feel " + howMuch + " awake.");
 			} else if (state.cupsOfCoffee == 3) {
 				jsToHTML("You should slow down with the coffee.");
+				addCoffee();
+				document.getElementById("userForm").classList.add("shaky");
 			} else if (state.cupsOfCoffee == 4) {
 				jsToHTML("That's it, no more coffee for you!");
-				document.getElementById("theStory").className = "supercaffeinated";
+				addCoffee();
 			} else {
 				jsToHTML("Nope.");
 			}
