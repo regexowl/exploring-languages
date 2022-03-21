@@ -173,9 +173,9 @@ function changeState(command) {
 					document.getElementById("userForm").classList.add("caffeinated");
 					break;
 				}
-				jsToHTML("You feel " + howMuch + " awake.");
+				jsToHTML("You feel " + howMuch + " awake. But is that enough?");
 			} else if (state.cupsOfCoffee == 3) {
-				jsToHTML("You should slow down with the coffee.");
+				jsToHTML("Maybe you should slow down with the coffee?");
 				addCoffee();
 				document.getElementById("userForm").classList.add("shaky");
 			} else if (state.cupsOfCoffee == 4) {
