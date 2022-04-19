@@ -1,0 +1,11 @@
+[package]
+name = "text-adventure"
+version = "0.0.1"
+author = ["regexowl"]
+description = "A simple text adventure written in Rust"
+repository = "https://github.com/regexowl/exploring-languages"
+readme = "README.md"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4"

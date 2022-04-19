@@ -1,2 +1,6 @@
 /c/a.out
 /go/pointers.go
+.vscode
+swift
+rust/target/*
+rust/Cargo.lock
