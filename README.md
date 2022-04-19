@@ -16,6 +16,7 @@ Check out the browser version of the game -> [PLAY](https://regexowl.github.io/e
 - Python ✅
 - Ruby ✅
 - [JavaScript](https://regexowl.github.io/exploring-languages/) ✅
+- Rust ✅
 - Emojicode
 
 ## A little map of the library
@@ -24,27 +25,35 @@ Check out the browser version of the game -> [PLAY](https://regexowl.github.io/e
 ├── c
 │   ├── README.md
 │   └── text_adventure.c
+├── CONTRIBUTING
 ├── dart
 │   ├── README.md
 │   └── text_adventure.dart
-├── docs
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── README.md
-│   ├── style.css
-│   └── text_adventure.js
 ├── go
 │   ├── README.md
 │   └── text_adventure.go
 ├── javascript
-│   └── README.md
+│   ├── favicon.ico
+│   ├── img
+│   │   ├── bedroom.jpg
+│   │   ├── kitchen.jpg
+│   │   └── outside.jpg
+│   ├── index.html
+│   ├── README.md
+│   ├── style.css
+│   └── text_adventure.js
 ├── LICENSE
 ├── python
 │   ├── README.md
 │   └── text_adventure.py
 ├── README.md
-└── ruby
+├── ruby
+│   ├── README.md
+│   └── text_adventure.rb
+└── rust
+    ├── Cargo.toml
     ├── README.md
-    └── text_adventure.rb
+    └── src
+        └── main.rs
 
 ```
